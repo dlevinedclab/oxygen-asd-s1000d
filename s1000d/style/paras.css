@@ -72,11 +72,11 @@ levelledPara {
 
 /* lists */
 /* TODO management du @listItemPrefix */
-randomList, randlist {
+randomList, randlist, attentionRandomList {
 	list-style: disc;
 }
 
-randomList > listItem, randlist > item {
+randomList > listItem, randlist > item, attentionRandomList > attentionRandomListItem {
 	display: list-item;
 	margin-left: 1cm;
 	list-style-position: outside;
@@ -99,12 +99,12 @@ deflist > def, deflist > term {
 }
 
 /* Listes numérotées */
-seqlist, sequentialList {
+seqlist, sequentialList, attentionSequentialList {
     counter-reset: seqlist1;
     display: block;
     list-style: decimal;
 }
-sequentialList > listItem {
+sequentialList > listItem, attentionSequentialList > attentionSequentialListItem {
 	display: list-item;
 	margin-left: 1cm;
 	list-style-position: outside;
